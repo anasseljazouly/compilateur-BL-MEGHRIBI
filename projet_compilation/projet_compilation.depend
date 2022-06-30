@@ -1,0 +1,32 @@
+# depslib dependency file v1.0
+1646773489 source:c:\users\asmaa\desktop\projet_compilation\analyseur_lexical.c
+	"analyseur_lexical.h"
+
+1646340849 c:\users\asmaa\desktop\projet_compilation\analyseur_lexical.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1646503676 source:c:\users\asmaa\desktop\projet_compilation\main.c
+	"analyseur_lexical.h"
+	"analyseur_syntaxique.h"
+	"analyseur_semantique.h"
+
+1646773901 source:c:\users\asmaa\desktop\projet_compilation\analyseur_syntaxique.c
+	"analyseur_syntaxique.h"
+
+1646498092 c:\users\asmaa\desktop\projet_compilation\analyseur_syntaxique.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"analyseur_lexical.h"
+
+1646774701 source:c:\users\asmaa\desktop\projet_compilation\analyseur_semantique.c
+	"analyseur_syntaxique.h"
+
+1643456088 c:\users\asmaa\desktop\projet_compilation\analyseur_semantique.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"analyseur_syntaxique.h"
+

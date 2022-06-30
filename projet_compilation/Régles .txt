@@ -1,0 +1,20 @@
+1. le id est déja déclaré ==> fait
+2. le id est non déclaré flbloc derej ==> fait
+
+8. id makhassch ykoun mot clé ==> fait
+4. une cte ne doit pas etre affectée awla lu ==> fait
+
+
+5. le nbre des arguments f l appel khasso ykoun neffso li f le champ f la fct et f le tableau  ... ==> fait 
+6. l'indice ne doit pas etre superieur à la taille du tableau
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////// 7ta nmchiw  l ensias ila mchina inshaaaaaaaaaaaaaaaaallllllllllllllllllllllah nkhadmohom f lclasse dyal scola !!!!!!!!!!!!!!
+
+3. le id est non déclaré flbloc fles fct 
+3. f une fct khasso ykhdem b hadouk les ids li kaynin flfct wla li kaynin flprogramme kamel
+7. ila affecta pour la premiere fois chi case dyal tableau b wa7ed string ==> khass ga3 douk les case lakhrin ykoun 
+fihom string
+8. lees noms des fcts ne doivent pas etre lues ou ecrits ou ...

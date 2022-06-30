@@ -1,0 +1,204 @@
+fin d instruction ==> ;
+const ==> tabt
+var ==> mt7ark
+déclarer une chaine ==> var ch="".
+if ==> ilakan
+else ==> ilamakan 
+while ==> ma7ed(cond,nbreiteration)
+for() ==> menhadi(i) lhadi (j) nemchiwbhadi(pas)
+printf ==> kteb(""+var)
+scanf ==> 9ra(var)
+smiyettableau (taille) 
+switch(var){
+case ... : 
+
+
+         break 
+default : } ==>
+3la7assab(var) {
+wach ... : inst 
+           baraka
+ta7aja : 
+        }
+
+
+fct(){} ==> katreje3   nom_fct (){  reje3 ... }
+            makatreje3ch 
+            khawya 
+            3amra
+strcpy ==> hez7et(,)
+strcmp ==> 9aren
+strcat ==> jme3
+strlen ==> toul 
+isalnum ==>wach3adadwla7arf
+isalpha ==> wach7arf
+isdigit ==> wach3adad
+ispunct ==> wach??
+fabs ==> Vabsolue
+fmod ==> lba9i 
+sin ==> sin
+cos ==> cos
+tan ==> tan
+sqrt ==> racine
+log ==> log
+exp ==> exp
+pow ==> puissance
+div ==> 9ssem
+asin ==> asin
+acos ==> acos
+atan ==> atan
+atoi ==> l3addad
+rand ==> kifmakan
+exit ==> khroj 
+
+
+
+
+l3aybat { 
+
+
+
+}
+derej {
+
+}
+if(!isdigit(currentChar))
+        return FALSE;
+
+    char num[MAXDIGIT+1];
+    int i = 0;
+    num[0] = currentChar;
+
+    
+    
+    while( ++i <= MAXDIGIT && isdigit(num[i] = currentChar = NextChar()));
+
+    if(i > MAXDIGIT)
+        LexError("Number has several digit");
+
+    num[i] = '\0';
+    strcpy(currentToken.name, "NUM");
+    strcpy(currentToken.value, num);
+
+    return TRUE;
+
+
+
+
+
+if(currentChar=='\'') {
+       j=0;
+       while((op[j]=currentChar=NextChar())!='\'') j++;
+         strcpy(currentToken.name, "STRING");
+         strcpy(currentToken.value, op);
+         currentChar = NextChar();
+         return TRUE;
+
+    }
+
+ghanbadlo . b ;$
+ghanbdalo , f les nbres reels b .
+
+Grammaire 
+PROGRAM ::=  l3aybat DEF fct FONCTION derej BLOCK 
+DEF ::= { CONSTS VARS }
+CONSTS ::= Tabt CONSTID [,CONSTID]; | epsilon
+CONSTID ::= ID ALPHA
+ALPHA :: = (Num) = \[TABCONST\] | =ALPHANUM
+TABCONST::= NUM[,NUM] | "STRING"[,"STRING"]
+VARS ::= MT7AREK ID VAR [,ID VAR ]; |epsilon
+VAR ::= epsilon | (NUM)
+ALPHANUM ::= NUM | "STRING"
+FONCTION ::= { khawya|3amra  ID(PARAM) { 
+               DEF
+               INSTS 
+               [ reje3 (NUM|ID); ]  
+                [khawya|3amra  ID(PARAM) { 
+               DEF
+               INSTS 
+               [ reje3 (NUM|ID); ] ] }   | epsilon }
+BLOCK ::= { INSTS }
+INSTS ::= INST
+INST ::=  AFFECT INST | SI INST | ECRIRE INST | LIRE INST | FOR INST | WHILE INST| SWITCH INST | APPELFCTKHAWYA INST |epsilon 
+AFFECT ::= ID AFFEC;
+AFFEC ::=  =AFFEC2 | AFFECTAB
+AFFECTAB ::= (NUM)= EXPR1  88888888888888888 hnaaaa on va essayer de changer AFFECTAB ::= (EXPR)= EXPR1 
+EXPR1 ::= EXPR | "STRING" | APPELFCT
+AFFEC2 ::= EXPR | \[TABCONST\] | "STRING" | APPELFCT
+SI ::= ilakan COND { INSTS } [ilamakan { INSTS }]
+ECRIRE ::= kteb( ECRIREA );
+ECRIREA ::= ID ECRIREB | "STRING" ECRIREB
+ECRIREB ::= + ECRIREA | epsilon
+LIRE ::= 9ra(ID[,ID]);
+FOR ::= menhadi (ID=NUM) lhadi (ID=NUM) nemchiwbhadi(+|- NUM){ INSTS }
+WHILE ::= ma7ed(COND){ INSTS }
+SWITCH ::= 3la7assab (ID) { 
+            wach ALPHANUM: INSTS
+                                [baraka;]
+            [wach ALPHANUM : INSTS
+                                [baraka;]] 
+             ta7aja : INSTS [baraka;] }
+PARAM ::=  ID[,ID] 
+EXPR ::= TERM [+|- TERM]
+TERM ::= FACT [*|/ FACT]
+FACT ::= ID | NUM | (EXPR) 
+ID ::= LETTRE [LETTRE | CHIFFRE]
+NUM ::= CHIFFRE [CHIFFRE]
+CHIFFRE ::= 0|..|9
+LETTRE ::= a|b|..|z|A|..|Z
+COND ::= ( EXPR RELOP EXPR )
+RELOP ::= == |<>|<|>|<=|>=
+APPELFCTKHAWYA ::= 3eyetkhawya APPEL  
+APPELFCT ::= 3eyet3amra APPEL.
+APPEL::=FCTDEFC1|FCTDEFC2|FCTDEFC3|FCTDEFC4|FCTDEFC5 |FCTDEC  
+FCTDEC ::= ID(VAL[,VAL]);
+VAL ::= ID | NUM |"STRING"
+
+FCTDEFC1 ::= wach3adadwla7arf(ID) |
+           wach7arf(ID) |
+           wach3adad(ID) |
+           wach3alama(ID) |
+           Vabsolue(ID) |
+           lba9i(ID) | 
+           sin(ID) |
+           cos(ID) |
+           tan(ID) |
+           sqrt(ID) |
+           log(ID) |
+           exp(ID) |
+           puissance(ID) |
+           9ssem(ID) |
+           asin(ID) |
+           acos(ID) |
+           atan(ID) |
+           l3addad(ID) |
+           kifmakan(ID) 
+           
+FCTDEFC2 ::= khroj(NUM)
+FCTDEFC3 ::= hez7et(ID,ARG1) |  jme3(ID,ARG1) 
+FCTDEFC4 ::= toul(ARG1)
+FCTDEFC5 ::= 9aren(ARG1,ARG1) 
+ARG1 ::= ID | "STRING"
+
+le id d'une variable wla d'une cte ne doit pas etre redéclaré
+la cte ne doit pas etre modifiiée (aff wla 9ra)
+on ne doit pas travailler avec un id non déclaré
+les arguments entre la def et la declaration d une fct doivent etre de mm nbre et de mm
+il ne doit pas utiliser une taille sup de la taille déclarée ds un tableau
+
+il ne doit pas affecter à un tableau de num , un string 
+makhassch ysta3mel un mot clé dyla le langage f l identif
+on fournit à la fct tabsymb la 1 ére chaine
+MT7AREK ...,....;
+MT7AREK  id(taille);
+
+
+
+
+
+
+
+
+
+
+ 

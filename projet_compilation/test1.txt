@@ -1,0 +1,41 @@
+l3aybat { 
+MT7AREK a;
+tabt x=10;
+}
+
+fct{
+khawya fct1()
+  {
+      {
+       tabt y=1;
+       mt7arek i;
+      }
+     menhadi (i=0) lhadi (i=10) nemchiwbhadi(+1)
+        { 
+          kteb(i);
+        }
+  }
+
+
+3amra fct2(z)
+  {
+    {tabt w=10;}
+    ilakan (w!=0) { reje3(w);} 
+    ilamakan { reje3 0; }
+  }
+
+
+
+
+}
+derej {
+kteb("BONJOUR"+ y);
+9ra(a);
+3la7assab (c) { 
+            wach "test": a=1;
+                         baraka;
+            wach 19 : a=2;
+                      baraka;
+            ta7aja : a=0;baraka; 
+             }
+}

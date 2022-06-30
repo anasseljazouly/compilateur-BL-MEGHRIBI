@@ -1,0 +1,28 @@
+l3aybat { 
+TABT x="MONSIEUR",y=11.5;
+mt7arek a,b,c;
+}
+
+fct{
+3amra fct2(z)
+  {
+    { tabt w=10; }
+    ilakan (w!=0) { w=0; }  
+    ilamakan { w=w+1; }
+    reje3(w);
+  }
+
+
+}
+
+derej {
+kteb("BONJOUR"+ y);
+9ra(a);
+3la7assab (c) { 
+            wach "test": a=1;
+                         baraka;
+            wach 19 : a=2;
+                      baraka;
+            ta7aja : a=0;baraka; 
+             }
+}

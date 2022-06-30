@@ -1,0 +1,47 @@
+
+typedef struct liste_id liste_id;
+struct liste_id{
+char value[20];
+liste_id* suivant;
+};
+liste_id* global;
+
+
+/******************************************************** la chaine des ids globals ************************************************************/
+
+void insertion_global(liste_id* l, char* valueToken)
+{
+    liste_id *nouveau = malloc(sizeof(*nouveau));
+    strcpy(nouveau->value,valueToken);
+    nouveau->suivant=NULL;
+    if(l ==NULL) l=nouveau;
+    else {
+    liste_id *actuel = l;
+    while(actuel->suivant !=NULL) actuel=actuel->suivant;
+     actuel->suivant=nouveau;
+    }
+}
+
+
+    /************************************** une fct ne doit pas utiliser les id d'une autre *********************************************************/
+       Ident* tableSymb2=chaine_tab_symb;
+        while (tableSymb2!=NULL && strcmp(tableSymb2->tidf,"TIDFCT")!=0){
+                  insertion_global(&global, tableSymb2->value);
+                  tableSymb2= tableSymb2->suivant;
+                }
+
+      Element* actuel=chaine_semant2;
+      while(actuel != NULL ){
+           if(strcmp(actuel->name,"KHAWYA") == 0 || strcmp(actuel->name,"3AMRA") == 0 ){
+              actuel =actuel->suivant; actuel =actuel->suivant;
+              liste_id* local;
+              
+              while( strcmp(actuel->name,"KHAWYA") != 0 && strcmp(actuel->name,"3AMRA") != 0 && strcmp(actuel->name,"DEREJ") != 0 ) {
+                  if(strcmp(actuel->name,"ID") == 0 ) insertion_global(&local,actuel->value);
+                  while(strcmp(actuel->name,"ID") != 0) actuel=actuel->suivant;
+              }
+               //hna ndiro lcode ==> récupérer les id des instructions de la fct 
+
+
+           }
+           else actuel=actuel->suivant;
